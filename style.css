@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.color{
+    color: cadetblue;
+}
+a{
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    padding: 0 5%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.big-square{
+    width: 12px;
+    height: 12px;
+    background-color: cadetblue;
+}
+.small-square{
+    width: 65%;
+    height: 60%;
+    background-color: black;
+    transform: translate(80%, 80%);
+}
+nav{
+    display: flex;
+    gap: 25px;
+}
+nav a{
+    color: dimgray;
+    transition: 0.25s ease-in;
+}
+nav a:hover{
+    color: cadetblue;
+}
+nav a:focus{
+    border-bottom: 2px solid cadetblue;
+}
+.icon{
+    display: none;
+}
+main{
+    display: flex;
+    height: 75%;
+    align-items: center;
+}
+article{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+article p{
+    font-size: 74px;
+    font-weight: bolder;
+    line-height: 60px;
+}
+.register{
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    font-size: large;
+}
+.sign-up{
+    color: white;
+    background-color: cadetblue;
+    padding: 3% 5%;
+    border-radius: 5px;
+}
+.image-container{
+    width: 50%;
+}
+.image-container img{
+    width: 100%;
+}
+@media screen and (max-width:1020px) {
+    main{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 8%;
+    }
+    article{
+        gap: 15px;
+    }
+    article p{
+        font-size: 44px;
+        line-height: 45px;
+    }
+    .register{
+        padding-top: 0;
+    }
+}
+@media screen and (max-width:513px) {
+    header{
+        position: relative;
+    }
+    nav{
+        flex-direction: column;
+        gap: 5px;
+        transform: translate(-50%, 20%);
+        display: none;
+        position: absolute;
+        top: 1px;
+        right: 0;
+    }
+    .icon{
+        display: block;
+    }
+    main{
+        justify-content: flex-start;
+    }
+    article p{
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .register{
+        font-size: small;
+    }
+    
+}

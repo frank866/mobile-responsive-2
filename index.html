@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+
+            <div class="big-square">
+                <div class="small-square"></div>
+            </div>
+
+            <h3>
+                <span class="color">L</span>OG<span class="color">-O</span>
+            </h3>
+
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">About Us</a>
+            <a href="#">Contacts</a>
+            <a href="#">Shop</a>
+        </nav>
+        <a href="#" class="icon"><i class="fa fa-bars"></i></a>
+
+    </header>
+    <main>
+        <article>
+
+            <h2 class="color">Nickotee</h2>
+            <p>Landing Page Design</p>
+
+            <div class="register">
+                <a href="#" class="sign-up">Sign Up</a>
+                <a href="#" class="info color">Show more</a>
+            </div>
+
+        </article>
+        <div class="image-container">
+            <img src="./work-image.png" alt="...">
+        </div>
+    </main>
+
+
+    <script>
+        var menu = document.querySelector('nav');
+        var menuBar = document.querySelector('.icon');
+        document.querySelector('.icon').addEventListener('click', function(){
+            if (menu.style.display == 'none') {
+                menu.style.display = 'flex';
+            } else {
+                menu.style.display = 'none';
+            }
+        })
+
+        document.querySelector('main').addEventListener('click', function(){
+            if (menu.style.display == 'flex'){
+                menu.style.display = 'none'
+            }
+        })
+    </script>
+</body>
+</html>
